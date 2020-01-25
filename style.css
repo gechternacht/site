@@ -1,0 +1,171 @@
+body{
+
+
+	background:#eaeaea;
+	color:#5a5f78;
+	font-family:Courier;
+	font-size:13px;
+
+}
+
+a{
+	color:#5a5f78;
+	text-decoration:none;
+}
+
+a:hover{
+	color:#5a5f78;
+	text-decoration:none;
+}
+
+a:visited{
+	color:#5a5f78;
+	text-decoration:none;
+}
+
+.navbar {
+
+
+	text-align: center;
+	background-color:#f0ccc1;
+	border: 1px solid black;
+	position: center;
+	display:block;
+	width:100%;
+	
+
+}
+		
+		.navbarbuttons{
+			display:grid;
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+
+		.navbarbuttons a {
+
+		
+			border: 1px solid black;
+			margin:2px;
+			padding:10px;
+
+
+
+		}
+
+				.navbarbuttons a:hover {
+
+			background-color:#eaeaea;
+		}
+
+						.navbarbuttons a:active {
+
+			background-color:#b6b9c8;
+		}
+
+
+.banners{
+	display:grid;
+	margin: 30px;
+
+	grid-template-columns: 1fr;
+	grid-gap: 10px;
+}
+
+	.banners img{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
+
+.containergrid {
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-gap: 5px;
+}
+
+
+		.box {
+			margin: 30px;
+			background-color:#f0ccc1;
+		 	border: 1px solid black;
+			padding:20px;
+		
+			min-width: 250px;
+			min-height: 250px;
+			max-width: 1500px;
+
+		}
+
+		.boxbackground {
+
+		
+		margin: 30px;
+		border: 1px solid black;
+		height: 250px;
+
+		min-width: 250px;
+		min-height: 250px;
+		max-width: 600px;
+
+		display:grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1px;
+		}
+
+		.boxbackground p {
+			background-color: black;
+			padding:2px;
+			margin:0px;
+			color:white;
+				}
+
+
+			.boxbackground .bg-img{
+				z-index: -1;
+				width: auto;
+				background-image: url("deathadder.jpg");
+				background-size:auto auto;
+				height:250px;
+				opacity: 0.1;
+			}
+
+				.boxbackground .bg-img:hover{
+
+					opacity: 0.2;
+				}
+
+				.boxbackground .bg-img:active{
+
+					opacity: 0.3;
+				}
+
+
+
+
+footer{
+	margin: 30px;
+	display:block;
+	margin-top:400px;
+	paddin:20px;
+	border: 1px solid black;
+}
+
+
+@media (min-width: 700px) {
+
+
+.containergrid {
+
+	grid-template-columns: 2fr 1fr;
+
+}
+
+.banners{
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+
+}
