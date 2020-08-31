@@ -1,12 +1,31 @@
 body{
 
-
+    width:100%;
+    margin:0px;
 	background:#eaeaea;
 	color:#5a5f78;
 	font-family:Courier;
 	font-size:13px;
 
 }
+
+
+    figure{
+      margin:auto;
+      margin-top:110vh;
+      max-width:600px;
+      height:auto;
+      background-color:tomato;
+      border: 4px solid tomato;
+      min-height:30px;
+      
+    }
+
+    figure  img {
+      width:100%;
+      height:auto;
+      background-color:wheat
+    }
 
 a{
 	color:#5a5f78;
@@ -22,6 +41,11 @@ a:visited{
 	color:#5a5f78;
 	text-decoration:none;
 }
+    h2{
+      font-size:60px;
+      width:100%;
+      text-align:center;}
+
 
 .navbar {
 
@@ -31,7 +55,6 @@ a:visited{
 	border: 1px solid black;
 	position: center;
 	display:block;
-	width:100%;
 	
 
 }
@@ -83,6 +106,8 @@ a:visited{
 	display:grid;
 	grid-template-columns: 1fr;
 	grid-gap: 5px;
+	max-width: 1200px;
+	margin: auto;
 }
 
 
@@ -92,10 +117,11 @@ a:visited{
 		 	border: 1px solid black;
 			padding:20px;
 		
-			min-width: 250px;
+			min-width: 200px;
 			min-height: 250px;
 			max-width: 1500px;
 
+			/*! margin: 30px 0; */
 		}
 
 		.boxbackground {
@@ -153,7 +179,7 @@ footer{
 }
 
 
-@media (min-width: 700px) {
+@media (min-width: 868px) {
 
 
 .containergrid {
@@ -163,7 +189,7 @@ footer{
 }
 
 .banners{
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
 }
 
