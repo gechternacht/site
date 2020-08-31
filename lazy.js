@@ -44,7 +44,7 @@ function lazyLoad(templateParent,templateMediaSize){
     lazyLoad('figure.lazy','template.desktop');
 
   // fullbanner 
-    useTemplate(document.querySelector('div.fullbanner'),'template.desktop',
+    useTemplate(document.querySelector('div.fullbanner'),'template.mobile',
       function(){
         $('.fullbanner').slick({
           dots: true,
